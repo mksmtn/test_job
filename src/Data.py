@@ -16,8 +16,9 @@ class Data:
         else:
             self._df = self._generate_csv()
 
-    def __getattr__(self, item):
-        return self._df.__getattribute__(item)
+    @property
+    def data_frame(self) -> pd.DataFrame:
+        return self._df
 
     def _generate_csv(self) -> pd.DataFrame:
         """Generate CSV file with random numbers"""
