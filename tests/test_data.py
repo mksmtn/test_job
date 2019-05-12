@@ -34,9 +34,8 @@ class TestData(unittest.TestCase):
 
     def test_if_numbers_are_valid(self):
         data = Data(TestData.config)
-        columns = [str(x) for x in range(TestData.ncols)]
-        mn = data.data_frame[columns].min().min()
-        mx = data.data_frame[columns].max().min()
+        mn = data.data_frame[data.data_frame.columns].min().min()
+        mx = data.data_frame[data.data_frame.columns].max().min()
         self.assertTrue(mn > TestData.min_border and mx < TestData.max_border)
 
 
