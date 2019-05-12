@@ -17,6 +17,11 @@ Based on file `examples/vectors.csv`, `examples/summary.txt`, `examples/hist.png
 
     python main.py a
 
+In `examples/summary.txt`, the result will be in the following format:
+
+    min:(distance, (row, column))
+    max:(disatnce, (row, column))
+
 ## Running tests
 
     python -m tests.test_data
