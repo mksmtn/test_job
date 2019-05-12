@@ -1,5 +1,10 @@
 # Generate vectors and show distribution
 
+## Requirements
+
+- Python 3.6+
+- Installed requirements (see requirements.txt)
+
 ## Generating CSV
 
 File `examples/vectors.csv` will be created
