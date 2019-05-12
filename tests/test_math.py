@@ -42,7 +42,7 @@ class TestEuclideanDistance(unittest.TestCase):
 
     def test_number_of_calculated_distances(self):
         returned_number = len(list(
-            self._euclidean_distance._calc_all_euclidean_distances()
+            self._euclidean_distance._calc_all_euclidean_distances_and_set_min_max()
         ))
         expected_number = 6
         self.assertEqual(returned_number, expected_number)
